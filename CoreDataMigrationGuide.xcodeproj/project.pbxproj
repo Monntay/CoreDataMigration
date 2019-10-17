@@ -14,7 +14,12 @@
 		719EB4002357531800DE8EB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719EB3FF2357531800DE8EB5 /* Assets.xcassets */; };
 		719EB4032357531800DE8EB5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719EB4022357531800DE8EB5 /* Preview Assets.xcassets */; };
 		719EB4062357531800DE8EB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719EB4042357531800DE8EB5 /* LaunchScreen.storyboard */; };
-		719EB4112357531800DE8EB5 /* CoreDataMigrationGuideTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719EB4102357531800DE8EB5 /* CoreDataMigrationGuideTests.swift */; };
+		719EB4112357531800DE8EB5 /* CoreDataMigrationGuideTests_1_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719EB4102357531800DE8EB5 /* CoreDataMigrationGuideTests_1_2.swift */; };
+		719EB41D2357656100DE8EB5 /* CoreDataMigrationGuideTests_2_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719EB41C2357656100DE8EB5 /* CoreDataMigrationGuideTests_2_3.swift */; };
+		719EB4232357697900DE8EB5 /* MigrationPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719EB4222357697900DE8EB5 /* MigrationPolicy.swift */; };
+		719EB4272357718600DE8EB5 /* MigrationPolicy.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 719EB4262357718600DE8EB5 /* MigrationPolicy.xcmappingmodel */; };
+		719EB42A235773E500DE8EB5 /* SchoolClassMigrationPolicy.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = 719EB429235773E500DE8EB5 /* SchoolClassMigrationPolicy.xcmappingmodel */; };
+		719EB42C235773EF00DE8EB5 /* SchoolClassMigrationPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719EB42B235773EF00DE8EB5 /* SchoolClassMigrationPolicy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +43,16 @@
 		719EB4052357531800DE8EB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		719EB4072357531800DE8EB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		719EB40C2357531800DE8EB5 /* CoreDataMigrationGuideTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataMigrationGuideTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		719EB4102357531800DE8EB5 /* CoreDataMigrationGuideTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataMigrationGuideTests.swift; sourceTree = "<group>"; };
+		719EB4102357531800DE8EB5 /* CoreDataMigrationGuideTests_1_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataMigrationGuideTests_1_2.swift; sourceTree = "<group>"; };
 		719EB4122357531800DE8EB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		719EB41B23575A6400DE8EB5 /* CoreDataMigrationGuide 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoreDataMigrationGuide 2.xcdatamodel"; sourceTree = "<group>"; };
+		719EB41C2357656100DE8EB5 /* CoreDataMigrationGuideTests_2_3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataMigrationGuideTests_2_3.swift; sourceTree = "<group>"; };
+		719EB41E2357668200DE8EB5 /* CoreDataMigrationGuide 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoreDataMigrationGuide 3.xcdatamodel"; sourceTree = "<group>"; };
+		719EB4222357697900DE8EB5 /* MigrationPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigrationPolicy.swift; sourceTree = "<group>"; };
+		719EB4262357718600DE8EB5 /* MigrationPolicy.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = MigrationPolicy.xcmappingmodel; sourceTree = "<group>"; };
+		719EB4282357736A00DE8EB5 /* CoreDataMigrationGuide 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "CoreDataMigrationGuide 4.xcdatamodel"; sourceTree = "<group>"; };
+		719EB429235773E500DE8EB5 /* SchoolClassMigrationPolicy.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = SchoolClassMigrationPolicy.xcmappingmodel; sourceTree = "<group>"; };
+		719EB42B235773EF00DE8EB5 /* SchoolClassMigrationPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolClassMigrationPolicy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +101,7 @@
 				719EB4042357531800DE8EB5 /* LaunchScreen.storyboard */,
 				719EB4072357531800DE8EB5 /* Info.plist */,
 				719EB3FA2357531500DE8EB5 /* CoreDataMigrationGuide.xcdatamodeld */,
+				719EB41F2357680700DE8EB5 /* Migration */,
 				719EB4012357531800DE8EB5 /* Preview Content */,
 			);
 			path = CoreDataMigrationGuide;
@@ -104,10 +118,22 @@
 		719EB40F2357531800DE8EB5 /* CoreDataMigrationGuideTests */ = {
 			isa = PBXGroup;
 			children = (
-				719EB4102357531800DE8EB5 /* CoreDataMigrationGuideTests.swift */,
+				719EB4102357531800DE8EB5 /* CoreDataMigrationGuideTests_1_2.swift */,
+				719EB41C2357656100DE8EB5 /* CoreDataMigrationGuideTests_2_3.swift */,
 				719EB4122357531800DE8EB5 /* Info.plist */,
 			);
 			path = CoreDataMigrationGuideTests;
+			sourceTree = "<group>";
+		};
+		719EB41F2357680700DE8EB5 /* Migration */ = {
+			isa = PBXGroup;
+			children = (
+				719EB4222357697900DE8EB5 /* MigrationPolicy.swift */,
+				719EB4262357718600DE8EB5 /* MigrationPolicy.xcmappingmodel */,
+				719EB429235773E500DE8EB5 /* SchoolClassMigrationPolicy.xcmappingmodel */,
+				719EB42B235773EF00DE8EB5 /* SchoolClassMigrationPolicy.swift */,
+			);
+			path = Migration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +238,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				719EB3F72357531500DE8EB5 /* AppDelegate.swift in Sources */,
+				719EB4232357697900DE8EB5 /* MigrationPolicy.swift in Sources */,
+				719EB4272357718600DE8EB5 /* MigrationPolicy.xcmappingmodel in Sources */,
 				719EB3F92357531500DE8EB5 /* SceneDelegate.swift in Sources */,
+				719EB42A235773E500DE8EB5 /* SchoolClassMigrationPolicy.xcmappingmodel in Sources */,
 				719EB3FE2357531500DE8EB5 /* ContentView.swift in Sources */,
+				719EB42C235773EF00DE8EB5 /* SchoolClassMigrationPolicy.swift in Sources */,
 				719EB3FC2357531500DE8EB5 /* CoreDataMigrationGuide.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,7 +252,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				719EB4112357531800DE8EB5 /* CoreDataMigrationGuideTests.swift in Sources */,
+				719EB4112357531800DE8EB5 /* CoreDataMigrationGuideTests_1_2.swift in Sources */,
+				719EB41D2357656100DE8EB5 /* CoreDataMigrationGuideTests_2_3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,9 +509,12 @@
 		719EB3FA2357531500DE8EB5 /* CoreDataMigrationGuide.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				719EB4282357736A00DE8EB5 /* CoreDataMigrationGuide 4.xcdatamodel */,
+				719EB41E2357668200DE8EB5 /* CoreDataMigrationGuide 3.xcdatamodel */,
+				719EB41B23575A6400DE8EB5 /* CoreDataMigrationGuide 2.xcdatamodel */,
 				719EB3FB2357531500DE8EB5 /* CoreDataMigrationGuide.xcdatamodel */,
 			);
-			currentVersion = 719EB3FB2357531500DE8EB5 /* CoreDataMigrationGuide.xcdatamodel */;
+			currentVersion = 719EB41B23575A6400DE8EB5 /* CoreDataMigrationGuide 2.xcdatamodel */;
 			path = CoreDataMigrationGuide.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
