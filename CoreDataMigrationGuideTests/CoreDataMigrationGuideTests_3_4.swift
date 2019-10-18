@@ -10,7 +10,7 @@ import XCTest
 import CoreData
 @testable import CoreDataMigrationGuide
 
-class CoreDataMigrationGuideTests_2_3: XCTestCase {
+class CoreDataMigrationGuideTests_3_4: XCTestCase {
 
 	// the url for the sqlite file
 	private var url: URL { return self.getDocumentsDirectory().appendingPathComponent("CoreDataMigrationTestURL.sqlite") }
@@ -41,7 +41,7 @@ class CoreDataMigrationGuideTests_2_3: XCTestCase {
 	// we will test the migration from version 1 to 2. the names of a person changed.
     func testHeavyWeightMigration() {
 		// read and load the old model
-		let oldModelURL = Bundle(for: AppDelegate.self).url(forResource: "CoreDataMigrationGuide.momd/CoreDataMigrationGuide 2", withExtension: "mom")!
+		let oldModelURL = Bundle(for: AppDelegate.self).url(forResource: "CoreDataMigrationGuide.momd/CoreDataMigrationGuide 3", withExtension: "mom")!
 		let oldManagedObjectModel = NSManagedObjectModel(contentsOf: oldModelURL)
 		XCTAssertNotNil(oldManagedObjectModel)
 
@@ -53,23 +53,21 @@ class CoreDataMigrationGuideTests_2_3: XCTestCase {
 		managedObjectContext.persistentStoreCoordinator = coordinator
 
 		// adding a person to the old db
-		let personTeacher = NSEntityDescription.insertNewObject(forEntityName: "Person", into: managedObjectContext)
-		personTeacher.setValue("lastname_", forKey: "lastname")
-		personTeacher.setValue("firstname_", forKey: "firstname")
-		personTeacher.setValue(true, forKey: "teacher")
+		let personTeacher = NSEntityDescription.insertNewObject(forEntityName: "Teacher", into: managedObjectContext)
+		personTeacher.setValue("lastname_", forKey: "lastName")
+		personTeacher.setValue("firstname_", forKey: "firstName")
 		personTeacher.setValue("44", forKey: "age")
 
-		let personStudent = NSEntityDescription.insertNewObject(forEntityName: "Person", into: managedObjectContext)
-		personStudent.setValue("lastname_", forKey: "lastname")
-		personStudent.setValue("firstname_", forKey: "firstname")
-		personStudent.setValue(false, forKey: "teacher")
+		let personStudent = NSEntityDescription.insertNewObject(forEntityName: "Student", into: managedObjectContext)
+		personStudent.setValue("lastname_", forKey: "lastName")
+		personStudent.setValue("firstname_", forKey: "firstName")
 		personStudent.setValue("8", forKey: "age")
 
 		try! managedObjectContext.save()
 
 		// migrate the store to the new model version
 
-		let newModelURL = Bundle(for: AppDelegate.self).url(forResource: "CoreDataMigrationGuide.momd/CoreDataMigrationGuide 3", withExtension: "mom")!
+		let newModelURL = Bundle(for: AppDelegate.self).url(forResource: "CoreDataMigrationGuide.momd/CoreDataMigrationGuide 4", withExtension: "mom")!
 		let newManagedObjectModel = NSManagedObjectModel(contentsOf: newModelURL)
 
 		let mappingModel = NSMappingModel(from: nil, forSourceModel: oldManagedObjectModel, destinationModel: newManagedObjectModel)
@@ -89,6 +87,7 @@ class CoreDataMigrationGuideTests_2_3: XCTestCase {
 		XCTAssertEqual(newStudent.first?.value(forKey: "firstName") as? String, "firstname_")
 		XCTAssertEqual(newStudent.first?.value(forKey: "lastName") as? String, "lastname_")
 		XCTAssertEqual(newStudent.first?.value(forKey: "age") as? String, "8")
+		XCTAssertEqual(newStudent.first?.value(forKey: "schoolClass") as? String, "3a")
 
 		let newTeacherRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Teacher")
 		let newTeacher = try! newManagedObjectContext.fetch(newTeacherRequest) as! [NSManagedObject]

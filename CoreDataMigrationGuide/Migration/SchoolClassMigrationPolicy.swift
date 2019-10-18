@@ -11,11 +11,12 @@ import CoreData
 
 class SchoolClassMigrationPolicy: NSEntityMigrationPolicy {
 
-	@objc func convertSchoolClass(_ value: Int, with date: String) -> Int {
-//		guard let stateEnum = CoreFarmActivityState(rawValue: value) else { return value }
-//
-//		return (date.isDate(after: Date()) && stateEnum == CoreFarmActivityState.done) ? CoreFarmActivityState.open.rawValue : value
+	@objc func convertSchoolClass(_ value: String, with lastname: String) -> String {
 
-		return 1
+		if value == "8" && lastname == "lastname_" {
+			return "3a"
+		} else {
+			return "1c"
+		}
 	}
 }

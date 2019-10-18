@@ -7,22 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7DB2C8C4-58E9-43B0-A5D5-AE3611235D6D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CoreDataMigrationGuideTests/CoreDataMigrationGuideTests_2_3.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
-            landmarkName = "testHeavyWeightMigration()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "1659B3DD-C7D1-4EEA-9BE1-BF75810D6AFC"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -39,32 +23,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BAD6244A-6685-411B-A104-64EF45939C99"
+            uuid = "38758EC3-9476-4A12-8628-6CF3EEB896C9"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CoreDataMigrationGuideTests/CoreDataMigrationGuideTests_2_3.swift"
+            filePath = "CoreDataMigrationGuideTests/CoreDataMigrationGuideTests_3_4.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "testHeavyWeightMigration()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "AAF08320-BA8C-4C01-B9F3-FBF46524B1A6"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CoreDataMigrationGuide/Migration/MigrationPolicy.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "createDestinationInstances(forSource:in:manager:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

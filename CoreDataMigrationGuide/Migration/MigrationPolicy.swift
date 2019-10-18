@@ -15,7 +15,7 @@ class MigrationPolicy: NSEntityMigrationPolicy {
 		if sInstance.entity.name == "Person" {
 			let firstName = sInstance.primitiveValue(forKey: "firstname") as? String
 			let lastName = sInstance.primitiveValue(forKey: "lastname") as? String
-			let age = sInstance.primitiveValue(forKey: "age") as? Int
+			let age = sInstance.primitiveValue(forKey: "age") as? String
 			let isTeacher = sInstance.primitiveValue(forKey: "teacher") as? Bool
 
 			let person = isTeacher == true ? NSEntityDescription.insertNewObject(forEntityName: "Teacher", into: manager.destinationContext) : NSEntityDescription.insertNewObject(forEntityName: "Student", into: manager.destinationContext)
