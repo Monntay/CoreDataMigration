@@ -13,8 +13,8 @@ import CoreData
 class CoreDataMigrationGuideTests_2_3: XCTestCase {
 
 	// the url for the sqlite file
-	private var url: URL { return self.getDocumentsDirectory().appendingPathComponent("CoreDataMigrationTestURL.sqlite") }
-	private var newUrl: URL { return self.getDocumentsDirectory().appendingPathComponent("CoreDataMigrationTestURLNew.sqlite") }
+	private var url: URL { return self.getDocumentsDirectory().appendingPathComponent("CoreDataMigration2TestURL.sqlite") }
+	private var newUrl: URL { return self.getDocumentsDirectory().appendingPathComponent("CoreDataMigration2TestURLNew.sqlite") }
 
 
 	// helper to get the doctuments dir

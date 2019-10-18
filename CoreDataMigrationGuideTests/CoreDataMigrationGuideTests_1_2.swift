@@ -13,7 +13,7 @@ import CoreData
 class CoreDataMigrationGuideTests_1_2: XCTestCase {
 
 	// the url for the sqlite file
-	private var url: URL { return self.getDocumentsDirectory().appendingPathComponent("CoreDataMigrationTestURL.sqlite") }
+	private var url: URL { return self.getDocumentsDirectory().appendingPathComponent("CoreDataMigration1TestURL.sqlite") }
 
 	// helper to get the doctuments dir
 	private func getDocumentsDirectory() -> URL {
@@ -76,6 +76,6 @@ class CoreDataMigrationGuideTests_1_2: XCTestCase {
 		XCTAssertEqual(newPersons.first?.value(forKey: "firstname") as? String, "name_")
 		XCTAssertEqual(newPersons.first?.value(forKey: "lastname") as? String, "surname_")
 		XCTAssertEqual(newPersons.first?.value(forKey: "teacher") as? Bool, true)
-		XCTAssertEqual(newPersons.first?.value(forKey: "age") as? Int, -1)
+		XCTAssertEqual(newPersons.first?.value(forKey: "age") as? Int, nil)
     }
 }
